@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Garza | Audio Producer · Composer · Audio Engineer</title>
+  
+  <!-- Tipografías de alta calidad -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & ESTILOS BASE */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0a0a0c;
+      color: #e2e8f0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 820px;
+      width: 100%;
+    }
+
+    /* TIPOGRAFÍA & CABECERA */
+    header {
+      margin-bottom: 60px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #38bdf8; /* Azul elegante */
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+
+    .bio-header {
+      font-size: 1.05rem;
+      color: #94a3b8;
+      max-width: 680px;
+      margin-bottom: 12px;
+    }
+
+    .location-tag {
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    /* SECCIONES GENERALES */
+    section {
+      margin-bottom: 65px;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f8fafc;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #1e293b;
+    }
+
+    /* CARDS & TRABAJOS (SELECTED WORK) */
+    .work-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .work-card {
+      background: #121318;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .work-card:hover {
+      border-color: #334155;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+      height: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .Aquí tienes el código HTML completo con los estilos CSS integrados dentro. Utiliza un tema oscuro en tono gris carbonato (`#121212`), tipografía moderna con pesos finos para un aspecto profesional y limpio, reproductores incrustados ( embeds ) responsivos para YouTube y Spotify, y reproductores nativos de HTML5 configurados para que reproduzcas tus archivos locales `before.mp3` y `after.mp3`.
+
+Puedes guardar este código en un archivo llamado `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAFAEL GARZA | Audio Producer & Engineer</title>
+  
+  <!-- Fuente Google Fonts: Montserrat (Moderna, limpia y profesional) -->
+  <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap)" rel="stylesheet">
+
+  <style>
+    /* Estilos Generales */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    /* Tipografía y Encabezados */
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #a0a0a0;
+      margin-bottom: 25px;
+    }
+
+    .intro-text {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: #cccccc;
+      margin-bottom: 10px;
+    }
+
+    .location {
+      font-size: 0.95rem;
+      color: #888888;
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      border-bottom: 1px solid #2a2a2a;
+      padding-bottom: 10px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #b0b0b0;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Modulos y Tarjetas */
+    .item-block {
+      margin-bottom: 40px;
+    }
+
+    .item-description {
+      margin-top: 12px;
+    }
+
+    /* Media Embeds (YouTube Responsive) */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #1e1e1e;
+      margin-top: 15px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Reproductores de Audio */
+    .audio-player-wrapper {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #282828;
+      margin-top: 15px;
+    }
+
+    .audio-track {
+      margin-bottom: 15px;
+    }
+
+    .audio-track:last-child {
+      margin-bottom: 0;
+    }
+
+    .audio-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    audio {
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      filter: invert(100%) hue-rotate(180deg); /* Adapta el reproductor nativo al tema oscuro */
+    }
+
+    /* Spotify Embed */
+    .spotify-container {
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    /* Estilos de Lista de Servicios */
+    .service-item {
+      margin-bottom: 25px;
+    }
+
+    .service-item h3 {
+      font-size: 1.05rem;
+      color: #f0f0f0;
+    }
+
+    /* Seccion About & Contact */
+    .software-list {
+      display: block;
+      margin-top: 15px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-info strong {
+      color: #ffffff;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+      .container {
+        padding: 40px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <h1>RAFAEL GARZA</h1>
+      <div class="subtitle">Audio Producer · Composer · Audio Engineer</div>
+      <p class="intro-text">Original music, audio post-production and voice restoration for brands, agencies and visual media.</p>
+      <p class="location">Based in Monterrey, Mexico · Available for remote projects</p>
+    </header>
+
+    <!-- SELECTED WORK -->
+    <section>
+      <h2>SELECTED WORK</h2>
+
+      <!-- Automotive Spec Commercial -->
+      <div class="item-block">
+        <h3>Automotive Spec Commercial — Original Music</h3>
+        <div class="video-container">
+          <iframe src="[https://www.youtube.com/embed/rk6S84t0hG0](https://www.youtube.com/embed/rk6S84t0hG0)" title="Automotive Spec Commercial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="item-description">Original music composed and produced for an automotive spec commercial.</p>
+      </div>
+
+      <!-- Coffee Brand Spec Commercial -->
+      <div class="item-block">
+        <h3>Coffee Brand Spec Commercial — Original Music</h3>
+        <div class="video-container">
+          <iframe src="[https://www.youtube.com/embed/I9BtKuyv5p4](https://www.youtube.com/embed/I9BtKuyv5p4)" title="Coffee Brand Spec Commercial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="item-description">Original music composed and produced for a coffee brand spec commercial.</p>
+      </div>
+
+      <!-- Voice Cleanup & Audio Restoration -->
+      <div class="item-block">
+        <h3>Voice Cleanup — Audio Restoration</h3>
+        
+        <div class="audio-player-wrapper">
+          <div class="audio-track">
+            <span class="audio-label">&#9654; Before</span>
+            <!-- Recuerda colocar tu archivo "before.mp3" en la misma carpeta del html -->
+            <audio controls src="before.mp3"></audio>
+          </div>
+          <div class="audio-track">
+            <span class="audio-label">&#9654; After</span>
+            <!-- Recuerda colocar tu archivo "after.mp3" en la misma carpeta del html -->
+            <audio controls src="after.mp3"></audio>
+          </div>
+        </div>
+        
+        <p class="item-description">Noise reduction, voice restoration, EQ and audio enhancement for clarity</p>
+      </div>
+    </section>
+
+    <!-- MUSIC & PRODUCTION -->
+    <section>
+      <h2>MUSIC & PRODUCTION</h2>
+      <div class="spotify-container">
+        <iframe style="border-radius:12px" src="[https://open.spotify.com/embed/playlist/2WIFgpLu4CieaHgvCSk4QS?utm_source=generator&theme=0](https://open.spotify.com/embed/playlist/2WIFgpLu4CieaHgvCSk4QS?utm_source=generator&theme=0)" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+      <h2>SERVICES</h2>
+      
+      <div class="service-item">
+        <h3>Original Music for Advertising</h3>
+        <p>Custom music and Foley for commercials, branded content and campaigns.</p>
+      </div>
+
+      <div class="service-item">
+        <h3>Audio Post-Production</h3>
+        <p>Editing, mixing, sound editing and final audio delivery for music production and video content.</p>
+      </div>
+
+      <div class="service-item">
+        <h3>Audio/Voice Cleanup & Restoration</h3>
+        <p>Noise reduction, dialogue cleanup, EQ, restoration and voice enhancement.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section>
+      <h2>ABOUT ME</h2>
+      <p>I’m Rapha Garza, an audio producer, composer and audio engineer based in Monterrey, Mexico. I work across music production, composition, audio post-production and voice restoration, helping brands and creators turn their visual content into polished audio experiences.</p>
+      <p class="software-list">Software: Logic Pro · Ableton Live · Pro Tools · DaVinci Resolve · Final Cut</p>
+      <p style="margin-top: 10px;">Available for remote projects worldwide.</p>
+    </section>
+
+    <!-- LET'S WORK TOGETHER -->
+    <section class="contact-info">
+      <h2>LET’S WORK TOGETHER</h2>
+      <p style="margin-bottom: 20px;">Have a project in mind? Let’s talk.</p>
+      
+      <p><strong>Email:</strong> <a href="mailto:rafaelgarza.audio@gmail.com">rafaelgarza.audio@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:8134505740">8134505740</a></p>
+      <p><strong>Upwork:</strong> <a href="[https://www.upwork.com/freelancers/~0107df1b5cde7ebc71?mp_source=share](https://www.upwork.com/freelancers/~0107df1b5cde7ebc71?mp_source=share)" target="_blank" rel="noopener">View Upwork Profile</a></p>
+    </section>
+
+  </div>
+
+</body>
+</html>
